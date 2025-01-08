@@ -1,0 +1,364 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #9d9c9c;
+  color: #000000;
+  text-align: center; /
+}
+.active{
+    background-color: #1b4d7e;
+    padding: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #c6ae25;
+}
+
+/*header section*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 140px;
+  background-color: #171717;
+}
+
+.logo img {
+  height: 200px; 
+  width: auto; 
+}
+
+.mainfont {
+  font-size: 30px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex; 
+  background-color: #003366; 
+  padding: 15px; 
+}
+
+header nav ul li a {
+  margin-right: 20px; 
+  text-decoration: none; 
+  color: white; 
+}
+
+header a:hover {
+  background-color: #1b4d7e; 
+  padding: 10px;
+  transition: 2s;
+}
+
+header nav li.active a {
+  border-bottom: 3px solid white; 
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 100px; 
+    width: auto;
+  }
+
+  .mainfont {
+    font-size: 24px; 
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header nav ul li a {
+    margin-right: 0;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+}
+
+/*Body/main part of the web page*/
+.mainimage img {
+  width: 1518px; 
+  height: 600px; 
+  opacity: 0.8; 
+}
+
+.container {
+  text-align: center; 
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 1fr);
+  background: forestgreen;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.image-topic{
+  color: black;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/*Home Page*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.head {
+  background-color: rgb(120, 233, 147);
+  width: 100%;
+}
+
+.home {
+  border: 0px solid;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+}
+/* lists */
+.centered-list {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+  text-align: start;
+}
+
+.home .content {
+  border: 0px solid;
+  text-align: center;
+  width: 60rem;
+  height: 40rem;
+  font-size: 2rem;
+  margin-top: -7%;
+}
+.home .content p {
+  font-style: italic;
+  font-size: 2.2rem;
+}
+
+.home .content h1 {
+  font-size: 3rem;
+}
+
+/*3 product page links on home page*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  width: 380px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-image {
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.prescription {
+  background-image: url(prescription.jpg);
+}
+.medicines {
+  background-image: url(medicines.jpg);
+}
+.selfcare {
+  background-image: url(selfcare.jpg);
+}
+
+.card h2 {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card p {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card a {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content th,
+.content td {
+  padding: 8px; 
+  border: 1px solid #ddd; 
+}
+
+.content th {
+  text-align: center;
+}
+/*3 links for products on homepage ends here*/
+
+/*Container holding the text*/
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/*Centered text*/
+.text-block {
+  position: absolute; /* Position the background text */
+  bottom: 200px;
+  top: 200px;
+  left: 250px;
+  right: 250px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  padding-left: 40px; /* Some padding */
+  padding-right: 40px; /* Some padding */
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  /* Medium-sized screens */
+  .text-block {
+    bottom: 100px;
+    top: 100px;
+    left: 50px;
+    right: 50px;
+    padding: 20px;
+  }
+
+  .centered h1 {
+    font-size: 1.5em;
+  }
+
+  .centered p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small-sized screens */
+  .text-block {
+    bottom: 50px;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .centered h1 {
+    font-size: 1.2em;
+  }
+
+  .centered p {
+    font-size: 0.9em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
